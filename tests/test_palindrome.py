@@ -13,7 +13,6 @@ class TestPalindromeSimples(unittest.TestCase):
     def test_simple_palindromes_5(self):
         self.assertTrue(is_palindrome("ava"))
 
-
     def test_phrase_palindromes_1(self):
         self.assertTrue(is_palindrome("Anita lava la tina"))
     def test_phrase_palindromes_2(self):
@@ -26,6 +25,21 @@ class TestPalindromeSimples(unittest.TestCase):
         self.assertTrue(is_palindrome("La ruta natural"))
     def test_phrase_palindromes_6(self):
         self.assertTrue(is_palindrome("Yo dono rosas, oro no doy"))
+
+
+    def test_non_palindromes_1(self):
+        self.assertFalse(is_palindrome("la chica baila"))  
+    def test_non_palindromes_2(self):
+            self.assertFalse(is_palindrome("mundo"))  
+    def test_non_palindromes_3(self):
+        self.assertFalse(is_palindrome("esto no es un palíndromo"))  
+    def test_non_palindromes_4(self):
+        self.assertFalse(is_palindrome("perro"))  
+    def test_non_palindromes_5(self):
+        self.assertFalse(is_palindrome("mirando la luna"))  
+    def test_non_palindromes_6(self):
+        self.assertFalse(is_palindrome("a mamá")) 
+
 
 if __name__ == '__main__':
     unittest.main()

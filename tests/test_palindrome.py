@@ -21,7 +21,7 @@ class TestPalindromeSimples(unittest.TestCase):
     def test_phrase_palindromes_3(self):
         self.assertTrue(is_palindrome("No lemon, no melon"))
     def test_phrase_palindromes_4(self):
-        self.assertTrue(is_palindrome("La sal, a la sala"))
+        self.assertTrue(is_palindrome("A la sal, a la sala"))
     def test_phrase_palindromes_5(self):
         self.assertTrue(is_palindrome("La ruta natural"))
     def test_phrase_palindromes_6(self):
@@ -38,19 +38,19 @@ class TestPalindromeSimples(unittest.TestCase):
     def test_non_palindromes_5(self):
         self.assertFalse(is_palindrome("mirando la luna"))  
     def test_non_palindromes_6(self):
-        self.assertFalse(is_palindrome("a mamá")) 
+        self.assertFalse(is_palindrome("a mamá la hamburguesa")) 
 
 
     def test_casos_edge_1(self):
         self.assertTrue(is_palindrome(""))  
     def test_casos_edge_2(self):
-        self.assertTrue(is_palindrome("¡Feliz Cumpleaños!"))  
+        self.assertFalse(is_palindrome("¡Feliz Cumpleaños!"))  
     def test_casos_edge_3(self):
         self.assertTrue(is_palindrome("A"))  
     def test_casos_edge_4(self):
         self.assertTrue(is_palindrome("aa"))
     def test_casos_edge_5(self):
-        self.assertTrue(is_palindrome("¿Cómo estás?"))
+        self.assertFalse(is_palindrome("¿Cómo estás?"))
            
 
 if __name__ == '__main__':

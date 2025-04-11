@@ -13,7 +13,7 @@ class TestPalindromeSimples(unittest.TestCase):
     def test_simple_palindromes_5(self):
         self.assertTrue(is_palindrome("ava"))
 
-    
+
     def test_phrase_palindromes_1(self):
         self.assertTrue(is_palindrome("Anita lava la tina"))
     def test_phrase_palindromes_2(self):
@@ -39,7 +39,6 @@ class TestPalindromeSimples(unittest.TestCase):
         self.assertFalse(is_palindrome("mirando la luna"))  
     def test_non_palindromes_6(self):
         self.assertFalse(is_palindrome("a mamá")) 
-
 
 
     def test_casos_edge_1(self):
